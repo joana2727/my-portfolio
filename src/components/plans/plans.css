@@ -1,0 +1,168 @@
+
+.plans {
+  padding: 6rem 1rem 3rem;
+  position: relative;
+  z-index: 1; 
+  overflow: hidden;
+}
+
+.section__title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.images-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.goal-image {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.timeline-container {
+  position: relative;
+  padding: 2rem 0;
+}
+
+.center-line {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #ccc;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+/* wrapper contains box and dot */
+.timeline-box-wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.timeline-box-wrapper.left {
+  justify-content: flex-end;
+}
+
+.timeline-box-wrapper.right {
+  justify-content: flex-start;
+}
+
+.timeline-box {
+  width: 45%;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  z-index: 2;
+}
+
+.goal-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--title-color, #333);
+}
+
+.goal-desc {
+  font-size: 0.95rem;
+  color: var(--text-color, #555);
+  line-height: 1.5;
+}
+
+/* Circle (dot) on center line */
+.circle {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #7f4a4e;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid white;
+  z-index: 3;
+}
+
+/* For screens 992px and below */
+@media screen and (max-width: 992px) {
+  .goal-image {
+    width: 50%;
+  }
+
+  .timeline-box-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-box {
+    width: 100%;
+  }
+
+  .center-line {
+    display: none;
+  }
+
+  .circle {
+    display: none; /* Hide circle */
+  }
+}
+
+/* For screens 768px and below */
+@media screen and (max-width: 768px) {
+  .goal-image {
+    width: 100%;
+  }
+
+  .timeline-box-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-box {
+    width: 100%;
+  }
+
+  .center-line {
+    display: none;
+  }
+
+  .circle {
+    display: none; /* Hide circle */
+  }
+}
+
+/* For screens 350px and below */
+@media screen and (max-width: 350px) {
+  .section__title {
+    font-size: 1.5rem;
+  }
+
+  .goal-title {
+    font-size: 1rem;
+  }
+
+  .goal-desc {
+    font-size: 0.85rem;
+  }
+
+  .timeline-box {
+    padding: 1rem;
+  }
+
+  .circle {
+    display: none; /* Hide circle */
+  }
+}

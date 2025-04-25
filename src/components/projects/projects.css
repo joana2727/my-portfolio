@@ -1,0 +1,106 @@
+.projects-section {
+    padding: 4rem 0;
+  }
+  
+  .projects-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .projects-list1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the items horizontally */
+    gap: 1.5rem; /* Adjust spacing between items */
+  }
+  
+  .project-box {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .project-box1 {
+    max-width: 30rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    transition: transform 0.3s ease;
+  }
+
+  .project-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  .project-name {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* This will round the corners */
+    object-fit: cover; /* Ensures the image scales nicely */
+    display: block; /* Ensures that the image is treated as a block element */
+    margin: 0 auto; /* Centers the image horizontally */
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds the shadow */
+  }
+  
+  
+  .project-description {
+    font-size: var(--smaller-font-size);
+    color: #555;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tech-tool {
+    padding: 0.4rem 1rem;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+    font-size: var(--smaller-font-size);
+    color: #555;
+  }
+  
+  .project-link {
+    display: inline-block;
+    background-color: #453726;
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: var(--smaller-font-size);
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .project-link:hover {
+    background-color: #7f4a4e;
+  }
+  
