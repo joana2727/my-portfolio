@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom'
 
 const Data = () => {
   return (
@@ -60,7 +61,7 @@ const Data = () => {
       Whether it’s content, graphics, or layouts—I’m all about visuals that make people look twice.
       </p>
 
-      <a href="#contact" className="button button--flex">
+      <Link to="/contact" className="button button--flex">
         Say Hello
         <svg
           class="button__icon"
@@ -79,7 +80,7 @@ const Data = () => {
             fill="var(--container-color)"
           ></path>
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };
